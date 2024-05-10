@@ -464,6 +464,8 @@ nav ul li a{
 }
 
 .about{
+    /* position: relative;
+    top: 180px; */
     width: 100%;
     padding: 78px 0px;
 }
@@ -474,7 +476,11 @@ nav ul li a{
 }
 
 .abt-text{
-    width: 500px;
+    position: relative;
+    margin-top: 60px;
+    /* width: 500px; */
+    margin-bottom: 0px;
+    /* text-indent: 500px; */
 }
 
 .abt-text h1{
@@ -498,6 +504,8 @@ nav ul li a{
 }
 
 .main{
+    /* position: relative;
+    bottom: 150px; */
     width: 1130px;
     max-width: 95%;
     margin: 0 auto;
@@ -526,7 +534,7 @@ nav ul li a{
 }
 
 .connect-section{
-    margin-top: 26px;
+    margin-top: 190px;
 }
 
 
