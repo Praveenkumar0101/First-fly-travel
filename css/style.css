@@ -29,6 +29,7 @@
     pointer-events: none;
 }
 
+
 .content {
     position: relative;
     z-index: 1;
@@ -124,6 +125,76 @@ nav ul li a {
     color: white;
     background-color: rgb(21, 74, 74);
     box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 1024px) {
+    .title h1 {
+        font-size: 8vh;
+    }
+
+    .title {
+        margin-top: 28vh;
+    }
+
+    .button {
+        font-size: 20px;
+        padding: 8px 25px;
+    }
+}
+
+/* Up to 768px */
+@media (max-width: 768px) {
+    nav .logo {
+        width: 50px;
+    }
+
+    .navbar a {
+        font-size: 16px;
+        padding: 8px 20px;
+    }
+
+    .title h1 {
+        font-size: 7vh;
+    }
+
+    .title {
+        margin-top: 25vh;
+    }
+
+    .button {
+        font-size: 18px;
+        padding: 6px 20px;
+    }
+}
+
+/* Up to 480px */
+@media (max-width: 480px) {
+    nav .logo {
+        width: 40px;
+    }
+
+    .navbar {
+        margin-right: 2vh;
+    }
+
+    .navbar a {
+        font-size: 14px;
+        padding: 6px 18px;
+    }
+
+    .title h1 {
+        font-size: 6vh;
+    }
+
+    .title {
+        margin-top: 20vh;
+        padding: 0 10px;
+    }
+
+    .button {
+        font-size: 16px;
+        padding: 5px 15px;
+    }
 }
 
 /* Services */
@@ -356,6 +427,69 @@ nav ul li a {
     cursor: pointer;
 }
 
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .col-content {
+        flex: 1 1 calc(50% - 20px); /* 2 columns on medium screens */
+    }
+
+    .col-content img {
+        height: 400px; /* Adjust image height for medium screens */
+    }
+
+    .col-content h5 {
+        font-size: 22px; /* Adjust font size */
+        bottom: 90px;
+    }
+
+    .col-content p {
+        font-size: 18px; /* Adjust font size */
+        bottom: 65px;
+    }
+}
+
+@media (max-width: 768px) {
+    .col-content {
+        flex: 1 1 100%; /* Single column on smaller screens */
+    }
+
+    .col-content img {
+        height: 300px; /* Adjust image height for small screens */
+    }
+
+    .col-content h5 {
+        font-size: 20px; /* Adjust font size */
+        bottom: 70px;
+    }
+
+    .col-content p {
+        font-size: 16px; /* Adjust font size */
+        bottom: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .col-content {
+        flex: 1 1 100%; /* Single column on very small screens */
+        margin: 5px; /* Reduce margin for better fit */
+    }
+
+    .col-content img {
+        height: 250px; /* Adjust image height for very small screens */
+    }
+
+    .col-content h5 {
+        font-size: 18px; /* Adjust font size */
+        bottom: 60px;
+    }
+
+    .col-content p {
+        font-size: 14px; /* Adjust font size */
+        bottom: 40px;
+    }
+}
+
+
 /* Newsletter */
 .newsletter {
     display: flex;
@@ -432,12 +566,13 @@ nav ul li a {
     }
 
     .send input[type="email"] {
-        flex: 2;
+        flex: 1;
+       
     }
 
-    .send input[type="submit"] {
+    .send input[value="Subscribe"] {
         flex: 1;
-        max-width: 100px;
+        max-width: 120px;
     }
 
     .newsletter form {
@@ -448,6 +583,7 @@ nav ul li a {
         width: 250px;
         font-size: 16px;
         padding: 15px 130px 15px 20px;
+        
     }
 
     .newsletter form input:last-child {
@@ -455,10 +591,11 @@ nav ul li a {
         top: 5px;
         right: 5px;
         font-size: 16px;
+       
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 470px) {
     .newstext h2 {
         margin-top: 60px;
         font-size: 28px;
@@ -617,7 +754,7 @@ footer .footer .footerlogo {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 440px) {
     .navbar a {
         padding: 6px 12px;
         font-size: 14px;
